@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "singularName": "review",
+    "pluralName": "reviews",
+    "displayName": "Reviews"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "reviewMovieCover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "reviewMovieTitle": {
+      "type": "string",
+      "required": true
+    },
+    "reviewMovieRating": {
+      "type": "decimal",
+      "required": true,
+      "max": 5,
+      "min": 0
+    },
+    "reviewPersonName": {
+      "type": "string",
+      "required": true
+    },
+    "reviewDescription": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
